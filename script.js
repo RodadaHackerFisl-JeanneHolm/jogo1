@@ -1,5 +1,5 @@
-
-nomes = [
+var nomeSorteado = '';
+var nomes = [
     'abacaxi',
     'maçã',
     'vaso',
@@ -24,6 +24,7 @@ nomes = [
 
 function sorteiaNome(){
     var x= Math.floor(Math.random() * 20);
+    nomeSorteado = nomes[x];
     return lista[x];
 }
 
@@ -31,11 +32,7 @@ window.addEventListener('load', inicio);
 
 function inicio(){
     var elementoImagem = document.getElementById("imagem");
-
-
-    console.log(elementoImagem);
-    console.log('nome sorteado='+sorteiaNome());
-
+    subs();
 }
 
 var lista = [];
@@ -47,7 +44,9 @@ for (i= 1; i<= 20; i++) {
 console.log(lista);
 function subs (){
 	var elementoImagem = document.getElementById("imagem");
+    var elementoTexto = document.getElementById("palavra");
 	elementoImagem.setAttribute("src" , sorteiaNome());
+    elementoTexto.textContent = nomeSorteado;
 }
 
 
