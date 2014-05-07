@@ -19,11 +19,12 @@ var nomes = [
     'pêra',
     'uva',
     'picolé duplo',
-    'peru'
+    'peru',
+    'time de desenvolvimento'
 ];
 
 function sorteiaNome(){
-    var x= Math.floor(Math.random() * 20);
+    var x= Math.floor(Math.random() * 21);
     nomeSorteado = nomes[x];
     return lista[x];
 }
