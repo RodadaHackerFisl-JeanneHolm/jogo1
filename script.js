@@ -20,7 +20,7 @@ function inicio(){
 }
 var lista = [];
 for (i= 1; i<= 20; i++) {
-    var nome = i+ ".png";
+    var nome = "imagens/" +i+ ".png";
 	// console.log(nome);
     lista.push(nome);
 }
