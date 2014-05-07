@@ -37,9 +37,17 @@ function inicio(){
     console.log('nome sorteado='+sorteiaNome());
 
 }
+
 var lista = [];
+
 for (i= 1; i<= 20; i++) {
     var nome = "imagens/" +i+ ".png";
     lista.push(nome);
 }
 console.log(lista);
+function subs (){
+	var elementoImagem = document.getElementById("imagem");
+	elementoImagem.setAttribute("src" , sorteiaNome());
+}
+
+
