@@ -1,7 +1,10 @@
 
 //console.log(Math.floor((Math.random() * 20) + 1));
 
-var x= Math.floor(Math.random() * 20) + 1;
+function sorteiaNome(){
+    var x= Math.floor(Math.random() * 20);
+    return lista[x];
+}
  // console.log(x+ ".png");
 // function (Math.floor((Math.random() * 20) + 1));
 
@@ -12,6 +15,7 @@ function inicio(){
 
 
     console.log(elementoImagem);
+    console.log('nome sorteado='+sorteiaNome());
 
 }
 var lista = [];
