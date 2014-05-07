@@ -1,5 +1,26 @@
 
-
+nomes = [
+    'abacaxi',
+    'maçã',
+    'vaso',
+    'banana',
+    'bicicleta',
+    'cachorro',
+    'cama',
+    'cereja',
+    'coelho',
+    'urso',
+    'carro',
+    'besouro',
+    'kiwi',
+    'melância',
+    'morango',
+    'navio pirata',
+    'pêra',
+    'uva',
+    'picolé duplo',
+    'peru'
+];
 
 function sorteiaNome(){
     var x= Math.floor(Math.random() * 20);
