@@ -24,7 +24,7 @@ var nomes = [
 ];
 
 function sorteiaNome(){
-    var x= Math.floor(Math.random() * 21);
+    var x= Math.floor(Math.random() * nomes.length);
     nomeSorteado = nomes[x];
     return lista[x];
 }
@@ -38,8 +38,12 @@ function inicio(){
 
 var lista = [];
 
-for (i= 1; i<= 20; i++) {
-    var nome = "imagens/" +i+ ".png";
+for (i= 1; i<= nomes.length; i++) {
+    var ext = ".png";
+    if (i > 19){
+        ext = ".jpg";
+    }
+    var nome = "imagens/" +i+ ext;
     lista.push(nome);
 }
 console.log(lista);
